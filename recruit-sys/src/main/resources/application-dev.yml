@@ -1,0 +1,32 @@
+#开发环境配置
+server:
+
+  port: 5000
+
+spring:
+
+  datasource:
+    username: root
+    password: sts041308
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/recruit_system?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8&allowPublicKeyRetrieval=true
+
+
+
+auth:
+  enabled: true
+
+
+request-log:
+  enabled: true
+
+logging:
+  level:
+
+    web: debug
+
+    com.recruit.mapper: debug
+
+
+
+

@@ -1,0 +1,483 @@
+2024-04-25 21:06:39.455 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2024-04-25 21:06:39.473 [restartedMain] "  " INFO  com.recruit.RecruitApplication - Starting RecruitApplication on STS-041308 with PID 6748 (E:\graduateproject\recruit\recruit-sys\target\classes started by LENOVO in E:\graduateproject\recruit\recruit-sys)
+2024-04-25 21:06:39.474 [restartedMain] "  " INFO  com.recruit.RecruitApplication - The following profiles are active: dev
+2024-04-25 21:06:39.515 [restartedMain] "  " INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-25 21:06:41.130 [restartedMain] "  " INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-25 21:06:41.132 [restartedMain] "  " INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-25 21:06:41.165 [restartedMain] "  " INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2024-04-25 21:06:41.460 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [com.recruit.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-25 21:06:41.784 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2024-04-25 21:06:41.790 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2024-04-25 21:06:41.791 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-25 21:06:41.791 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-04-25 21:06:41.876 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-25 21:06:41.876 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2360 ms
+2024-04-25 21:06:41.917 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-25 21:06:42.000 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-25 21:06:42.005 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://127.0.0.1:3306/recruit_system?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8&allowPublicKeyRetrieval=true'
+2024-04-25 21:06:44.945 [restartedMain] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-25 21:06:45.412 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-04-25 21:06:45.447 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2024-04-25 21:06:45.464 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2024-04-25 21:06:45.796 [restartedMain] "  " INFO  com.recruit.RecruitApplication - Started RecruitApplication in 6.678 seconds (JVM running for 8.183)
+2024-04-25 21:19:08.907 [http-nio-5000-exec-1] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-25 21:19:08.907 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-25 21:19:08.921 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2024-04-25 21:19:10.738 [http-nio-5000-exec-4] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 67ms
+2024-04-25 21:19:10.738 [http-nio-5000-exec-2] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 67ms
+2024-04-25 21:19:10.738 [http-nio-5000-exec-6] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 67ms
+2024-04-25 21:19:10.741 [http-nio-5000-exec-3] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 70ms
+2024-04-25 21:19:33.803 [http-nio-5000-exec-5] "OPTIONS /recruit/user/login HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/user/login] from: 127.0.0.1 costs: 1ms
+2024-04-25 21:19:34.645 [http-nio-5000-exec-7] "POST /recruit/user/login HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [POST] -> [/recruit/user/login] from: 127.0.0.1 costs: 837ms
+2024-04-25 21:19:34.649 [http-nio-5000-exec-9] "OPTIONS /recruit/user/permissions HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/user/permissions] from: 127.0.0.1 costs: 0ms
+2024-04-25 21:19:34.690 [http-nio-5000-exec-8] "GET /recruit/user/permissions HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/permissions] from: 127.0.0.1 costs: 26ms
+2024-04-25 21:19:34.702 [http-nio-5000-exec-10] "OPTIONS /recruit/user/getGroup/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/user/getGroup/4] from: 127.0.0.1 costs: 0ms
+2024-04-25 21:19:34.704 [http-nio-5000-exec-1] "OPTIONS /recruit/user/getGroup/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/user/getGroup/4] from: 127.0.0.1 costs: 0ms
+2024-04-25 21:19:34.715 [http-nio-5000-exec-6] "GET /recruit/user/getGroup/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/4] from: 127.0.0.1 costs: 6ms
+2024-04-25 21:19:34.721 [http-nio-5000-exec-2] "GET /recruit/user/getGroup/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/4] from: 127.0.0.1 costs: 3ms
+2024-04-25 21:19:34.723 [http-nio-5000-exec-4] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 21:19:34.732 [http-nio-5000-exec-3] "OPTIONS /recruit/application/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/application/page/find/4] from: 127.0.0.1 costs: 0ms
+2024-04-25 21:19:34.833 [http-nio-5000-exec-5] "GET /recruit/application/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/find/4] from: 127.0.0.1 costs: 89ms
+2024-04-25 21:40:58.541 [lettuce-nioEventLoop-4-1] "  " INFO  io.lettuce.core.protocol.CommandHandler - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2024-04-25 21:40:58.659 [lettuce-eventExecutorLoop-1-2] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /127.0.0.1:6379
+2024-04-25 21:41:04.947 [lettuce-eventExecutorLoop-1-5] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:41:11.248 [lettuce-eventExecutorLoop-1-8] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:41:18.345 [lettuce-eventExecutorLoop-1-11] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:41:25.550 [lettuce-eventExecutorLoop-1-1] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:41:31.745 [lettuce-eventExecutorLoop-1-2] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:41:42.046 [lettuce-eventExecutorLoop-1-3] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:42:00.546 [lettuce-eventExecutorLoop-1-4] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:42:32.653 [lettuce-eventExecutorLoop-1-5] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:42:32.655 [lettuce-nioEventLoop-4-5] "  " INFO  io.lettuce.core.protocol.ReconnectionHandler - Reconnected to 127.0.0.1:6379
+2024-04-25 21:45:38.733 [http-nio-5000-exec-2] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 21:45:38.962 [http-nio-5000-exec-3] "OPTIONS /recruit/position/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/position/page/1] from: 127.0.0.1 costs: 0ms
+2024-04-25 21:45:38.962 [http-nio-5000-exec-4] "OPTIONS /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/notify] from: 127.0.0.1 costs: 0ms
+2024-04-25 21:45:38.990 [http-nio-5000-exec-5] "GET /recruit/position/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/1] from: 127.0.0.1 costs: 21ms
+2024-04-25 21:45:38.999 [http-nio-5000-exec-9] "GET /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/notify] from: 127.0.0.1 costs: 29ms
+2024-04-25 21:45:44.674 [http-nio-5000-exec-7] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户4连接断开，剩余在线数为:1
+2024-04-25 21:45:46.646 [http-nio-5000-exec-8] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户null连接断开，剩余在线数为:1
+2024-04-25 21:45:46.647 [http-nio-5000-exec-10] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户4连接断开，剩余在线数为:0
+2024-04-25 21:45:50.143 [http-nio-5000-exec-6] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 21:45:50.316 [http-nio-5000-exec-1] "GET /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/notify] from: 127.0.0.1 costs: 7ms
+2024-04-25 21:45:50.316 [http-nio-5000-exec-2] "GET /recruit/position/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/1] from: 127.0.0.1 costs: 7ms
+2024-04-25 21:45:56.576 [http-nio-5000-exec-3] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户4连接断开，剩余在线数为:0
+2024-04-25 21:45:57.053 [http-nio-5000-exec-7] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 5ms
+2024-04-25 21:45:57.053 [http-nio-5000-exec-9] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 5ms
+2024-04-25 21:45:57.054 [http-nio-5000-exec-4] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 9ms
+2024-04-25 21:45:57.055 [http-nio-5000-exec-5] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 10ms
+2024-04-25 21:46:01.157 [http-nio-5000-exec-8] "POST /recruit/user/login HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [POST] -> [/recruit/user/login] from: 127.0.0.1 costs: 154ms
+2024-04-25 21:46:01.171 [http-nio-5000-exec-10] "GET /recruit/user/permissions HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/permissions] from: 127.0.0.1 costs: 8ms
+2024-04-25 21:46:01.187 [http-nio-5000-exec-6] "GET /recruit/user/getGroup/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/4] from: 127.0.0.1 costs: 3ms
+2024-04-25 21:46:01.192 [http-nio-5000-exec-2] "GET /recruit/user/getGroup/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/4] from: 127.0.0.1 costs: 2ms
+2024-04-25 21:46:01.194 [http-nio-5000-exec-1] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 21:46:01.313 [http-nio-5000-exec-3] "GET /recruit/application/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/find/4] from: 127.0.0.1 costs: 104ms
+2024-04-25 21:46:01.333 [http-nio-5000-exec-7] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 21:46:10.000 [http-nio-5000-exec-5] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户4连接断开，剩余在线数为:1
+2024-04-25 21:46:10.000 [http-nio-5000-exec-8] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户4连接断开，剩余在线数为:0
+2024-04-25 21:50:35.685 [lettuce-nioEventLoop-4-5] "  " INFO  io.lettuce.core.protocol.CommandHandler - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2024-04-25 21:50:35.745 [lettuce-eventExecutorLoop-1-7] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /127.0.0.1:6379
+2024-04-25 21:50:42.047 [lettuce-eventExecutorLoop-1-10] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:50:48.347 [lettuce-eventExecutorLoop-1-1] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:50:55.550 [lettuce-eventExecutorLoop-1-4] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:51:02.746 [lettuce-eventExecutorLoop-1-6] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:51:08.945 [lettuce-eventExecutorLoop-1-7] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:51:19.247 [lettuce-eventExecutorLoop-1-8] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:51:37.750 [lettuce-eventExecutorLoop-1-9] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:52:09.855 [lettuce-eventExecutorLoop-1-10] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:52:41.947 [lettuce-eventExecutorLoop-1-11] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:53:14.047 [lettuce-eventExecutorLoop-1-12] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:53:46.146 [lettuce-eventExecutorLoop-1-1] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:54:18.247 [lettuce-eventExecutorLoop-1-2] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:54:50.346 [lettuce-eventExecutorLoop-1-3] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:55:22.445 [lettuce-eventExecutorLoop-1-4] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:55:54.547 [lettuce-eventExecutorLoop-1-5] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:56:26.648 [lettuce-eventExecutorLoop-1-6] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:56:58.746 [lettuce-eventExecutorLoop-1-7] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:57:30.845 [lettuce-eventExecutorLoop-1-8] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:58:02.946 [lettuce-eventExecutorLoop-1-9] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:58:35.050 [lettuce-eventExecutorLoop-1-10] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:59:07.147 [lettuce-eventExecutorLoop-1-11] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 21:59:39.251 [lettuce-eventExecutorLoop-1-12] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:00:11.350 [lettuce-eventExecutorLoop-1-1] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:00:43.450 [lettuce-eventExecutorLoop-1-2] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:01:15.556 [lettuce-eventExecutorLoop-1-3] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:01:47.650 [lettuce-eventExecutorLoop-1-4] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:02:19.745 [lettuce-eventExecutorLoop-1-5] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:02:51.855 [lettuce-eventExecutorLoop-1-6] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:03:23.952 [lettuce-eventExecutorLoop-1-7] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:03:56.046 [lettuce-eventExecutorLoop-1-8] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:04:28.153 [lettuce-eventExecutorLoop-1-9] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:05:00.246 [lettuce-eventExecutorLoop-1-10] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:05:32.350 [lettuce-eventExecutorLoop-1-11] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:06:04.451 [lettuce-eventExecutorLoop-1-12] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:06:36.546 [lettuce-eventExecutorLoop-1-1] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:07:08.650 [lettuce-eventExecutorLoop-1-2] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:07:40.755 [lettuce-eventExecutorLoop-1-3] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:08:12.851 [lettuce-eventExecutorLoop-1-4] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:08:44.947 [lettuce-eventExecutorLoop-1-5] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:09:17.047 [lettuce-eventExecutorLoop-1-6] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:09:49.151 [lettuce-eventExecutorLoop-1-7] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:10:21.253 [lettuce-eventExecutorLoop-1-8] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:10:53.346 [lettuce-eventExecutorLoop-1-9] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:11:25.446 [lettuce-eventExecutorLoop-1-10] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:11:57.548 [lettuce-eventExecutorLoop-1-11] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:12:29.659 [lettuce-eventExecutorLoop-1-12] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:13:01.749 [lettuce-eventExecutorLoop-1-1] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:13:33.847 [lettuce-eventExecutorLoop-1-2] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:14:05.955 [lettuce-eventExecutorLoop-1-3] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:14:38.045 [lettuce-eventExecutorLoop-1-4] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:15:10.146 [lettuce-eventExecutorLoop-1-5] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:15:42.246 [lettuce-eventExecutorLoop-1-6] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:16:14.345 [lettuce-eventExecutorLoop-1-7] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:16:46.446 [lettuce-eventExecutorLoop-1-8] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:17:18.545 [lettuce-eventExecutorLoop-1-9] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:17:50.645 [lettuce-eventExecutorLoop-1-10] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:18:22.745 [lettuce-eventExecutorLoop-1-11] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:18:54.845 [lettuce-eventExecutorLoop-1-12] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:19:26.946 [lettuce-eventExecutorLoop-1-1] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:19:59.048 [lettuce-eventExecutorLoop-1-2] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:20:31.145 [lettuce-eventExecutorLoop-1-3] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:21:03.253 [lettuce-eventExecutorLoop-1-4] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:21:35.356 [lettuce-eventExecutorLoop-1-5] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:22:07.449 [lettuce-eventExecutorLoop-1-6] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:22:39.553 [lettuce-eventExecutorLoop-1-7] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:23:11.651 [lettuce-eventExecutorLoop-1-8] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:23:43.751 [lettuce-eventExecutorLoop-1-9] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:24:15.851 [lettuce-eventExecutorLoop-1-10] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:24:47.950 [lettuce-eventExecutorLoop-1-11] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:25:20.049 [lettuce-eventExecutorLoop-1-12] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:25:52.148 [lettuce-eventExecutorLoop-1-1] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:26:24.246 [lettuce-eventExecutorLoop-1-2] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:26:56.345 [lettuce-eventExecutorLoop-1-3] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:27:28.453 [lettuce-eventExecutorLoop-1-4] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:28:00.556 [lettuce-eventExecutorLoop-1-5] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:28:32.646 [lettuce-eventExecutorLoop-1-6] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:29:04.749 [lettuce-eventExecutorLoop-1-7] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:29:36.848 [lettuce-eventExecutorLoop-1-8] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:30:08.945 [lettuce-eventExecutorLoop-1-9] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:30:41.046 [lettuce-eventExecutorLoop-1-10] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:31:13.152 [lettuce-eventExecutorLoop-1-11] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:31:45.246 [lettuce-eventExecutorLoop-1-12] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:32:17.345 [lettuce-eventExecutorLoop-1-1] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:32:49.446 [lettuce-eventExecutorLoop-1-2] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:33:21.546 [lettuce-eventExecutorLoop-1-3] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:33:53.646 [lettuce-eventExecutorLoop-1-4] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:34:25.751 [lettuce-eventExecutorLoop-1-5] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:34:57.846 [lettuce-eventExecutorLoop-1-6] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:35:29.951 [lettuce-eventExecutorLoop-1-7] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:36:02.045 [lettuce-eventExecutorLoop-1-8] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:36:34.146 [lettuce-eventExecutorLoop-1-9] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:37:06.246 [lettuce-eventExecutorLoop-1-10] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:37:38.345 [lettuce-eventExecutorLoop-1-11] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:38:10.446 [lettuce-eventExecutorLoop-1-12] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:38:42.547 [lettuce-eventExecutorLoop-1-1] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:39:14.645 [lettuce-eventExecutorLoop-1-2] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:39:46.746 [lettuce-eventExecutorLoop-1-3] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:40:18.850 [lettuce-eventExecutorLoop-1-4] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:40:50.949 [lettuce-eventExecutorLoop-1-5] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:41:23.045 [lettuce-eventExecutorLoop-1-6] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:41:55.145 [lettuce-eventExecutorLoop-1-7] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:42:27.251 [lettuce-eventExecutorLoop-1-8] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:42:59.350 [lettuce-eventExecutorLoop-1-9] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:43:31.450 [lettuce-eventExecutorLoop-1-10] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:44:03.549 [lettuce-eventExecutorLoop-1-11] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:44:35.650 [lettuce-eventExecutorLoop-1-12] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:45:07.746 [lettuce-eventExecutorLoop-1-1] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:45:39.852 [lettuce-eventExecutorLoop-1-2] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:46:11.945 [lettuce-eventExecutorLoop-1-3] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:46:44.045 [lettuce-eventExecutorLoop-1-4] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:47:16.145 [lettuce-eventExecutorLoop-1-5] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:47:48.245 [lettuce-eventExecutorLoop-1-6] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:48:20.346 [lettuce-eventExecutorLoop-1-7] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:48:52.446 [lettuce-eventExecutorLoop-1-8] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:49:24.551 [lettuce-eventExecutorLoop-1-9] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:49:56.646 [lettuce-eventExecutorLoop-1-10] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:50:28.746 [lettuce-eventExecutorLoop-1-11] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:51:00.849 [lettuce-eventExecutorLoop-1-12] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:51:32.945 [lettuce-eventExecutorLoop-1-1] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:52:05.047 [lettuce-eventExecutorLoop-1-2] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:52:37.146 [lettuce-eventExecutorLoop-1-3] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:53:09.248 [lettuce-eventExecutorLoop-1-4] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:53:41.345 [lettuce-eventExecutorLoop-1-5] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:54:13.445 [lettuce-eventExecutorLoop-1-6] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:54:45.546 [lettuce-eventExecutorLoop-1-7] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:55:17.654 [lettuce-eventExecutorLoop-1-8] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:55:49.747 [lettuce-eventExecutorLoop-1-9] "  " INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 127.0.0.1:6379
+2024-04-25 22:55:49.748 [lettuce-nioEventLoop-4-8] "  " INFO  io.lettuce.core.protocol.ReconnectionHandler - Reconnected to 127.0.0.1:6379
+2024-04-25 22:56:11.900 [http-nio-5000-exec-3] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 22:56:12.103 [http-nio-5000-exec-7] "OPTIONS /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/notify] from: 127.0.0.1 costs: 0ms
+2024-04-25 22:56:12.103 [http-nio-5000-exec-4] "OPTIONS /recruit/position/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/position/page/1] from: 127.0.0.1 costs: 0ms
+2024-04-25 22:56:12.116 [http-nio-5000-exec-9] "GET /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/notify] from: 127.0.0.1 costs: 8ms
+2024-04-25 22:56:12.117 [http-nio-5000-exec-5] "GET /recruit/position/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/1] from: 127.0.0.1 costs: 9ms
+2024-04-25 22:56:17.371 [http-nio-5000-exec-8] "OPTIONS /recruit/user/getGroup/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/user/getGroup/4] from: 127.0.0.1 costs: 0ms
+2024-04-25 22:56:17.373 [http-nio-5000-exec-10] "OPTIONS /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 1ms
+2024-04-25 22:56:17.376 [http-nio-5000-exec-6] "OPTIONS /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 0ms
+2024-04-25 22:56:17.378 [http-nio-5000-exec-6] "OPTIONS /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/category] from: 127.0.0.1 costs: 0ms
+2024-04-25 22:56:17.384 [http-nio-5000-exec-2] "OPTIONS /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/company/find] from: 127.0.0.1 costs: 0ms
+2024-04-25 22:56:17.391 [http-nio-5000-exec-4] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 6ms
+2024-04-25 22:56:17.392 [http-nio-5000-exec-7] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 9ms
+2024-04-25 22:56:17.392 [http-nio-5000-exec-5] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 3ms
+2024-04-25 22:56:17.398 [http-nio-5000-exec-9] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 12ms
+2024-04-25 22:56:17.474 [http-nio-5000-exec-8] "OPTIONS /recruit/user/refresh HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/user/refresh] from: 127.0.0.1 costs: 0ms
+2024-04-25 22:56:17.481 [http-nio-5000-exec-10] "GET /recruit/user/refresh HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/refresh] from: 127.0.0.1 costs: 2ms
+2024-04-25 22:56:17.488 [http-nio-5000-exec-1] "GET /recruit/user/getGroup/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/4] from: 127.0.0.1 costs: 2ms
+2024-04-25 22:56:17.494 [http-nio-5000-exec-6] "OPTIONS /recruit/application/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/application/page/find/4] from: 127.0.0.1 costs: 0ms
+2024-04-25 22:56:17.539 [http-nio-5000-exec-2] "GET /recruit/application/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/find/4] from: 127.0.0.1 costs: 33ms
+2024-04-25 23:26:15.398 [http-nio-5000-exec-8] "OPTIONS /recruit/position/10 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/position/10] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:26:15.409 [http-nio-5000-exec-10] "GET /recruit/position/10 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/10] from: 127.0.0.1 costs: 7ms
+2024-04-25 23:26:15.414 [http-nio-5000-exec-1] "OPTIONS /recruit/position/hits/10 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/position/hits/10] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:26:15.489 [http-nio-5000-exec-6] "PUT /recruit/position/hits/10 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [PUT] -> [/recruit/position/hits/10] from: 127.0.0.1 costs: 72ms
+2024-04-25 23:26:15.494 [http-nio-5000-exec-2] "OPTIONS /recruit/user/getID_UserData HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/user/getID_UserData] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:26:15.515 [http-nio-5000-exec-9] "POST /recruit/user/getID_UserData HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [POST] -> [/recruit/user/getID_UserData] from: 127.0.0.1 costs: 17ms
+2024-04-25 23:26:15.525 [http-nio-5000-exec-7] "OPTIONS /recruit/application HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/application] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:26:15.532 [http-nio-5000-exec-5] "GET /recruit/application HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:26:22.409 [http-nio-5000-exec-3] "GET /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/notify] from: 127.0.0.1 costs: 6ms
+2024-04-25 23:26:25.574 [http-nio-5000-exec-4] "OPTIONS /recruit/follow/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/follow/4] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:26:25.594 [http-nio-5000-exec-8] "GET /recruit/follow/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/follow/4] from: 127.0.0.1 costs: 10ms
+2024-04-25 23:26:30.857 [http-nio-5000-exec-10] "OPTIONS /recruit/resume/get/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/resume/get/4] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:26:30.916 [http-nio-5000-exec-1] "GET /recruit/resume/get/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/resume/get/4] from: 127.0.0.1 costs: 50ms
+2024-04-25 23:26:30.978 [http-nio-5000-exec-6] "OPTIONS /recruit/resume/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/resume/1] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:26:30.994 [http-nio-5000-exec-2] "GET /recruit/resume/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/resume/1] from: 127.0.0.1 costs: 12ms
+2024-04-25 23:26:31.012 [http-nio-5000-exec-9] "GET /assets/null HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/null] from: 0:0:0:0:0:0:0:1 costs: 4ms
+2024-04-25 23:26:31.022 [http-nio-5000-exec-9] "  " INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/error] from: 0:0:0:0:0:0:0:1 costs: 6ms
+2024-04-25 23:26:41.752 [http-nio-5000-exec-7] "OPTIONS /recruit/application/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/application/page/find/4] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:26:41.774 [http-nio-5000-exec-5] "GET /recruit/application/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/find/4] from: 127.0.0.1 costs: 8ms
+2024-04-25 23:26:51.756 [http-nio-5000-exec-3] "OPTIONS /recruit/interview/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/interview/page/find/4] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:26:51.777 [http-nio-5000-exec-4] "GET /recruit/interview/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/interview/page/find/4] from: 127.0.0.1 costs: 13ms
+2024-04-25 23:27:03.500 [http-nio-5000-exec-8] "GET /recruit/application/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/find/4] from: 127.0.0.1 costs: 95ms
+2024-04-25 23:27:08.011 [http-nio-5000-exec-10] "GET /recruit/resume/get/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/resume/get/4] from: 127.0.0.1 costs: 18ms
+2024-04-25 23:27:08.064 [http-nio-5000-exec-1] "GET /recruit/resume/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/resume/1] from: 127.0.0.1 costs: 10ms
+2024-04-25 23:27:08.074 [http-nio-5000-exec-6] "GET /assets/null HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/null] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2024-04-25 23:27:08.075 [http-nio-5000-exec-6] "  " INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/error] from: 0:0:0:0:0:0:0:1 costs: 1ms
+2024-04-25 23:27:09.177 [http-nio-5000-exec-9] "GET /recruit/follow/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/follow/4] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:27:09.596 [http-nio-5000-exec-7] "GET /recruit/resume/get/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/resume/get/4] from: 127.0.0.1 costs: 22ms
+2024-04-25 23:27:09.641 [http-nio-5000-exec-5] "GET /recruit/resume/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/resume/1] from: 127.0.0.1 costs: 11ms
+2024-04-25 23:27:09.653 [http-nio-5000-exec-3] "GET /assets/null HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/null] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2024-04-25 23:27:09.655 [http-nio-5000-exec-3] "  " INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/error] from: 0:0:0:0:0:0:0:1 costs: 1ms
+2024-04-25 23:27:09.949 [http-nio-5000-exec-8] "GET /recruit/application/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/find/4] from: 127.0.0.1 costs: 20ms
+2024-04-25 23:28:43.119 [http-nio-5000-exec-1] "GET /recruit/position/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/1] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:29:21.162 [http-nio-5000-exec-6] "OPTIONS /recruit/notify/all HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/notify/all] from: 127.0.0.1 costs: 1ms
+2024-04-25 23:29:21.167 [http-nio-5000-exec-2] "GET /recruit/notify/all HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/notify/all] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:29:40.229 [http-nio-5000-exec-9] "GET /recruit/application/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/find/4] from: 127.0.0.1 costs: 18ms
+2024-04-25 23:29:41.580 [http-nio-5000-exec-7] "GET /recruit/user/getGroup/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/4] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:29:41.581 [http-nio-5000-exec-5] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 10ms
+2024-04-25 23:29:41.581 [http-nio-5000-exec-4] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 9ms
+2024-04-25 23:29:41.583 [http-nio-5000-exec-8] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 9ms
+2024-04-25 23:29:41.584 [http-nio-5000-exec-3] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 13ms
+2024-04-25 23:29:41.606 [http-nio-5000-exec-10] "GET /recruit/application/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/find/4] from: 127.0.0.1 costs: 8ms
+2024-04-25 23:35:09.810 [http-nio-5000-exec-4] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户4连接断开，剩余在线数为:0
+2024-04-25 23:35:10.408 [http-nio-5000-exec-5] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 23:35:10.612 [http-nio-5000-exec-8] "GET /recruit/user/getGroup/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/4] from: 127.0.0.1 costs: 7ms
+2024-04-25 23:35:10.612 [http-nio-5000-exec-3] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 10ms
+2024-04-25 23:35:10.612 [http-nio-5000-exec-2] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 6ms
+2024-04-25 23:35:10.613 [http-nio-5000-exec-6] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 7ms
+2024-04-25 23:35:10.615 [http-nio-5000-exec-10] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 13ms
+2024-04-25 23:35:10.734 [http-nio-5000-exec-9] "GET /recruit/application/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/find/4] from: 127.0.0.1 costs: 101ms
+2024-04-25 23:35:11.998 [http-nio-5000-exec-1] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 23:35:12.201 [http-nio-5000-exec-7] "GET /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/notify] from: 127.0.0.1 costs: 6ms
+2024-04-25 23:35:12.201 [http-nio-5000-exec-4] "GET /recruit/position/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/1] from: 127.0.0.1 costs: 6ms
+2024-04-25 23:35:41.772 [http-nio-5000-exec-5] "GET /recruit/user/getGroup/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/4] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:35:41.772 [http-nio-5000-exec-2] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:35:41.773 [http-nio-5000-exec-3] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 6ms
+2024-04-25 23:35:41.776 [http-nio-5000-exec-6] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 9ms
+2024-04-25 23:35:41.776 [http-nio-5000-exec-8] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 9ms
+2024-04-25 23:35:41.894 [http-nio-5000-exec-10] "GET /recruit/application/page/find/4 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/find/4] from: 127.0.0.1 costs: 95ms
+2024-04-25 23:35:58.645 [http-nio-5000-exec-9] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户4连接断开，剩余在线数为:1
+2024-04-25 23:36:10.641 [http-nio-5000-exec-1] "GET /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/notify] from: 127.0.0.1 costs: 6ms
+2024-04-25 23:36:10.641 [http-nio-5000-exec-4] "GET /recruit/position/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/1] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:36:19.930 [http-nio-5000-exec-3] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:36:19.930 [http-nio-5000-exec-5] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:36:19.930 [http-nio-5000-exec-6] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户4连接断开，剩余在线数为:0
+2024-04-25 23:36:19.932 [http-nio-5000-exec-7] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:36:19.940 [http-nio-5000-exec-2] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 14ms
+2024-04-25 23:36:20.486 [http-nio-5000-exec-9] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:36:20.486 [http-nio-5000-exec-1] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:36:20.486 [http-nio-5000-exec-8] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:36:20.489 [http-nio-5000-exec-10] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 8ms
+2024-04-25 23:36:33.663 [http-nio-5000-exec-4] "GET /recruit/company/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/1] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:36:37.568 [http-nio-5000-exec-6] "GET /recruit/position/5 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/5] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:36:37.573 [http-nio-5000-exec-5] "OPTIONS /recruit/position/hits/5 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/position/hits/5] from: 127.0.0.1 costs: 1ms
+2024-04-25 23:36:37.686 [http-nio-5000-exec-3] "PUT /recruit/position/hits/5 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [PUT] -> [/recruit/position/hits/5] from: 127.0.0.1 costs: 110ms
+2024-04-25 23:36:37.695 [http-nio-5000-exec-7] "POST /recruit/user/getID_UserData HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [POST] -> [/recruit/user/getID_UserData] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:37:17.141 [http-nio-5000-exec-2] "OPTIONS /recruit/user/login HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/user/login] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:37:17.305 [http-nio-5000-exec-9] "POST /recruit/user/login HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [POST] -> [/recruit/user/login] from: 127.0.0.1 costs: 162ms
+2024-04-25 23:37:17.309 [http-nio-5000-exec-1] "OPTIONS /recruit/user/permissions HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/user/permissions] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:37:17.325 [http-nio-5000-exec-8] "GET /recruit/user/permissions HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/permissions] from: 127.0.0.1 costs: 11ms
+2024-04-25 23:37:17.341 [http-nio-5000-exec-4] "OPTIONS /recruit/user/getGroup/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/user/getGroup/1] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:37:17.341 [http-nio-5000-exec-10] "OPTIONS /recruit/user/getGroup/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/user/getGroup/1] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:37:17.348 [http-nio-5000-exec-6] "GET /recruit/user/getGroup/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/1] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:37:17.352 [http-nio-5000-exec-5] "GET /recruit/user/getGroup/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/1] from: 127.0.0.1 costs: 1ms
+2024-04-25 23:37:17.359 [http-nio-5000-exec-3] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 23:37:18.795 [http-nio-5000-exec-9] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 23:37:23.113 [http-nio-5000-exec-10] "OPTIONS /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/notify] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:37:23.118 [http-nio-5000-exec-4] "GET /recruit/position/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/1] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:37:23.121 [http-nio-5000-exec-6] "GET /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/notify] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:37:25.763 [http-nio-5000-exec-3] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:37:25.763 [http-nio-5000-exec-9] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:37:25.763 [http-nio-5000-exec-7] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:37:25.764 [http-nio-5000-exec-5] "GET /recruit/user/getGroup/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/1] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:37:25.766 [http-nio-5000-exec-2] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 7ms
+2024-04-25 23:37:26.996 [http-nio-5000-exec-1] "OPTIONS /recruit/position/5 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/position/5] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:37:27.000 [http-nio-5000-exec-8] "GET /recruit/position/5 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/5] from: 127.0.0.1 costs: 1ms
+2024-04-25 23:37:27.007 [http-nio-5000-exec-10] "OPTIONS /recruit/position/hits/5 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/position/hits/5] from: 127.0.0.1 costs: 1ms
+2024-04-25 23:37:27.021 [http-nio-5000-exec-4] "PUT /recruit/position/hits/5 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [PUT] -> [/recruit/position/hits/5] from: 127.0.0.1 costs: 12ms
+2024-04-25 23:37:27.032 [http-nio-5000-exec-6] "POST /recruit/user/getID_UserData HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [POST] -> [/recruit/user/getID_UserData] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:37:27.042 [http-nio-5000-exec-3] "OPTIONS /recruit/application HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/application] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:37:27.047 [http-nio-5000-exec-9] "GET /recruit/application HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:37:52.278 [http-nio-5000-exec-7] "GET /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/notify] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:38:00.326 [http-nio-5000-exec-5] "OPTIONS /recruit/resume/get/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/resume/get/1] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:38:00.434 [http-nio-5000-exec-2] "GET /recruit/resume/get/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/resume/get/1] from: 127.0.0.1 costs: 100ms
+2024-04-25 23:38:07.687 [http-nio-5000-exec-1] "OPTIONS /recruit/favor/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/favor/1] from: 127.0.0.1 costs: 1ms
+2024-04-25 23:38:07.700 [http-nio-5000-exec-8] "GET /recruit/favor/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/favor/1] from: 127.0.0.1 costs: 7ms
+2024-04-25 23:38:08.370 [http-nio-5000-exec-10] "GET /recruit/resume/get/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/resume/get/1] from: 127.0.0.1 costs: 27ms
+2024-04-25 23:38:20.420 [http-nio-5000-exec-3] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:38:20.421 [http-nio-5000-exec-3] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户1连接断开，剩余在线数为:0
+2024-04-25 23:38:20.422 [http-nio-5000-exec-3] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户1连接断开，剩余在线数为:0
+2024-04-25 23:38:20.422 [http-nio-5000-exec-4] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:38:20.425 [http-nio-5000-exec-9] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 8ms
+2024-04-25 23:38:20.430 [http-nio-5000-exec-6] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 13ms
+2024-04-25 23:38:20.923 [http-nio-5000-exec-8] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:38:20.923 [http-nio-5000-exec-2] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:38:20.923 [http-nio-5000-exec-10] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:38:20.924 [http-nio-5000-exec-1] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:38:33.520 [http-nio-5000-exec-7] "POST /recruit/user/login HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [POST] -> [/recruit/user/login] from: 127.0.0.1 costs: 152ms
+2024-04-25 23:38:33.530 [http-nio-5000-exec-5] "GET /recruit/user/permissions HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/permissions] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:38:33.543 [http-nio-5000-exec-4] "OPTIONS /recruit/user/getGroup/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/user/getGroup/6] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:38:33.543 [http-nio-5000-exec-3] "OPTIONS /recruit/user/getGroup/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/user/getGroup/6] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:38:33.549 [http-nio-5000-exec-9] "GET /recruit/user/getGroup/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/6] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:38:33.553 [http-nio-5000-exec-6] "GET /recruit/user/getGroup/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/6] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:38:33.557 [http-nio-5000-exec-10] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 23:38:34.243 [http-nio-5000-exec-8] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 23:38:36.450 [http-nio-5000-exec-7] "OPTIONS /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/notify] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:38:36.456 [http-nio-5000-exec-5] "GET /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/notify] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:38:39.361 [http-nio-5000-exec-4] "OPTIONS /recruit/position/page/hr/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/position/page/hr/6] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:38:39.375 [http-nio-5000-exec-3] "GET /recruit/position/page/hr/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/hr/6] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:38:48.804 [http-nio-5000-exec-9] "OPTIONS /recruit/application/page/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/application/page/6] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:38:48.844 [http-nio-5000-exec-6] "GET /recruit/application/page/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/6] from: 127.0.0.1 costs: 32ms
+2024-04-25 23:38:49.531 [http-nio-5000-exec-10] "OPTIONS /recruit/application/page/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/application/page/6] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:38:49.558 [http-nio-5000-exec-8] "GET /recruit/application/page/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/6] from: 127.0.0.1 costs: 20ms
+2024-04-25 23:38:52.438 [http-nio-5000-exec-1] "GET /recruit/application/page/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/6] from: 127.0.0.1 costs: 13ms
+2024-04-25 23:38:53.407 [http-nio-5000-exec-7] "OPTIONS /recruit/resume/10 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/resume/10] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:38:53.407 [http-nio-5000-exec-2] "OPTIONS /recruit/resume/10 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/resume/10] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:38:53.422 [http-nio-5000-exec-5] "GET /recruit/resume/10 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/resume/10] from: 127.0.0.1 costs: 11ms
+2024-04-25 23:38:53.430 [http-nio-5000-exec-4] "GET /recruit/resume/10 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/resume/10] from: 127.0.0.1 costs: 6ms
+2024-04-25 23:41:18.932 [http-nio-5000-exec-8] "GET /recruit/application/page/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/6] from: 127.0.0.1 costs: 34ms
+2024-04-25 23:41:23.825 [http-nio-5000-exec-1] "OPTIONS /recruit/hr-company/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/hr-company/6] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:41:23.836 [http-nio-5000-exec-2] "GET /recruit/hr-company/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/hr-company/6] from: 127.0.0.1 costs: 9ms
+2024-04-25 23:41:33.064 [http-nio-5000-exec-7] "GET /recruit/application/page/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/6] from: 127.0.0.1 costs: 53ms
+2024-04-25 23:41:36.824 [http-nio-5000-exec-5] "GET /recruit/application/page/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/6] from: 127.0.0.1 costs: 17ms
+2024-04-25 23:41:37.727 [http-nio-5000-exec-4] "GET /recruit/application/page/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/6] from: 127.0.0.1 costs: 20ms
+2024-04-25 23:45:50.574 [http-nio-5000-exec-10] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户6连接断开，剩余在线数为:1
+2024-04-25 23:45:50.574 [http-nio-5000-exec-3] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户6连接断开，剩余在线数为:0
+2024-04-25 23:45:50.986 [http-nio-5000-exec-6] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 23:45:51.128 [http-nio-5000-exec-8] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:1
+2024-04-25 23:45:51.241 [http-nio-5000-exec-1] "GET /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/notify] from: 127.0.0.1 costs: 6ms
+2024-04-25 23:45:51.241 [http-nio-5000-exec-2] "GET /recruit/position/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/1] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:45:51.386 [http-nio-5000-exec-7] "GET /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/notify] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:45:51.437 [http-nio-5000-exec-5] "GET /recruit/application/page/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/application/page/6] from: 127.0.0.1 costs: 47ms
+2024-04-25 23:45:53.220 [http-nio-5000-exec-4] "GET /recruit/user/getGroup/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/6] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:45:53.221 [http-nio-5000-exec-9] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:45:53.221 [http-nio-5000-exec-6] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:45:53.221 [http-nio-5000-exec-10] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:45:53.221 [http-nio-5000-exec-3] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:45:59.850 [http-nio-5000-exec-7] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:45:59.850 [http-nio-5000-exec-5] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:45:59.851 [http-nio-5000-exec-1] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:45:59.851 [http-nio-5000-exec-8] "GET /recruit/user/getGroup/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/6] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:45:59.852 [http-nio-5000-exec-2] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:46:11.637 [http-nio-5000-exec-4] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户6连接断开，剩余在线数为:1
+2024-04-25 23:46:12.199 [http-nio-5000-exec-9] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:2
+2024-04-25 23:46:12.362 [http-nio-5000-exec-5] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:46:12.363 [http-nio-5000-exec-7] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:46:12.363 [http-nio-5000-exec-10] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:46:12.363 [http-nio-5000-exec-6] "GET /recruit/user/getGroup/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/6] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:46:12.364 [http-nio-5000-exec-3] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:48:50.730 [http-nio-5000-exec-6] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:48:50.731 [http-nio-5000-exec-7] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:48:50.732 [http-nio-5000-exec-3] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:48:50.735 [http-nio-5000-exec-10] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 8ms
+2024-04-25 23:49:54.817 [http-nio-5000-exec-4] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户null连接断开，剩余在线数为:2
+2024-04-25 23:49:55.515 [http-nio-5000-exec-7] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:49:55.515 [http-nio-5000-exec-3] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:49:55.515 [http-nio-5000-exec-5] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:49:55.518 [http-nio-5000-exec-6] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 6ms
+2024-04-25 23:54:22.622 [http-nio-5000-exec-9] "GET /recruit/user/getGroup/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/6] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:54:22.626 [http-nio-5000-exec-4] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户6连接断开，剩余在线数为:1
+2024-04-25 23:54:23.104 [http-nio-5000-exec-3] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:2
+2024-04-25 23:54:23.298 [http-nio-5000-exec-10] "GET /recruit/category HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/category] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:54:23.299 [http-nio-5000-exec-7] "GET /recruit/user/getGroup/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/6] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:54:23.299 [http-nio-5000-exec-5] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:54:23.299 [http-nio-5000-exec-1] "GET /recruit/company/find HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/find] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:54:23.301 [http-nio-5000-exec-6] "GET /recruit/position/page/keyword HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/keyword] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:54:31.388 [http-nio-5000-exec-8] "GET /recruit/user/getGroup/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/6] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:54:31.396 [http-nio-5000-exec-2] "GET /recruit/user/getGroup/6 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/6] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:54:53.755 [http-nio-5000-exec-9] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户6连接断开，剩余在线数为:1
+2024-04-25 23:54:57.211 [http-nio-5000-exec-4] "POST /recruit/user/login HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [POST] -> [/recruit/user/login] from: 127.0.0.1 costs: 160ms
+2024-04-25 23:54:57.223 [http-nio-5000-exec-3] "GET /recruit/user/permissions HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/permissions] from: 127.0.0.1 costs: 6ms
+2024-04-25 23:54:57.237 [http-nio-5000-exec-10] "GET /recruit/user/getGroup/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/1] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:54:57.241 [http-nio-5000-exec-7] "GET /recruit/user/getGroup/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/user/getGroup/1] from: 127.0.0.1 costs: 1ms
+2024-04-25 23:54:57.244 [http-nio-5000-exec-5] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】有新的连接，总数为:2
+2024-04-25 23:54:59.690 [http-nio-5000-exec-8] "GET /recruit/notify HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/notify] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:54:59.690 [http-nio-5000-exec-2] "GET /recruit/position/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/position/page/1] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:55:02.846 [http-nio-5000-exec-9] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:55:06.103 [http-nio-5000-exec-4] "OPTIONS /recruit/company/21 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/company/21] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:55:06.109 [http-nio-5000-exec-3] "GET /recruit/company/21 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/21] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:55:14.617 [http-nio-5000-exec-10] "GET /recruit/company/page/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/1] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:56:12.203 [http-nio-5000-exec-8] "OPTIONS /recruit/company/page/2 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/company/page/2] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:56:12.208 [http-nio-5000-exec-2] "GET /recruit/company/page/2 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/2] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:56:20.053 [http-nio-5000-exec-9] "OPTIONS /recruit/company/20 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/company/20] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:56:20.059 [http-nio-5000-exec-4] "GET /recruit/company/20 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/20] from: 127.0.0.1 costs: 2ms
+2024-04-25 23:56:22.586 [http-nio-5000-exec-3] "GET /recruit/company/page/2 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/company/page/2] from: 127.0.0.1 costs: 3ms
+2024-04-25 23:59:03.466 [http-nio-5000-exec-6] "  " INFO  com.recruit.module.message.WebSocket - 【websocket消息】用户6连接断开，剩余在线数为:1
+2024-04-25 23:59:06.386 [http-nio-5000-exec-5] "OPTIONS /recruit/log/users HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/log/users] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:59:06.420 [http-nio-5000-exec-7] "GET /recruit/log/users HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/log/users] from: 127.0.0.1 costs: 26ms
+2024-04-25 23:59:06.428 [http-nio-5000-exec-1] "OPTIONS /recruit/log HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/log] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:59:06.441 [http-nio-5000-exec-8] "GET /recruit/log HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/log] from: 127.0.0.1 costs: 7ms
+2024-04-25 23:59:13.436 [http-nio-5000-exec-2] "OPTIONS /recruit/admin/users HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/admin/users] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:59:13.501 [http-nio-5000-exec-9] "GET /recruit/admin/users HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/admin/users] from: 127.0.0.1 costs: 63ms
+2024-04-25 23:59:13.527 [http-nio-5000-exec-4] "OPTIONS /recruit/admin/group/all HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/admin/group/all] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:59:13.535 [http-nio-5000-exec-3] "GET /recruit/admin/group/all HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/admin/group/all] from: 127.0.0.1 costs: 5ms
+2024-04-25 23:59:22.883 [http-nio-5000-exec-10] "OPTIONS /recruit/hr-company/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/hr-company/1] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:59:22.890 [http-nio-5000-exec-6] "GET /recruit/hr-company/1 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/hr-company/1] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:59:36.314 [http-nio-5000-exec-4] "GET /recruit/admin/group/all HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/admin/group/all] from: 127.0.0.1 costs: 4ms
+2024-04-25 23:59:44.907 [http-nio-5000-exec-3] "OPTIONS /recruit/admin/permission HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/admin/permission] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:59:44.916 [http-nio-5000-exec-10] "GET /recruit/admin/permission HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/admin/permission] from: 127.0.0.1 costs: 6ms
+2024-04-25 23:59:44.934 [http-nio-5000-exec-6] "OPTIONS /recruit/admin/group/2 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/recruit/admin/group/2] from: 127.0.0.1 costs: 0ms
+2024-04-25 23:59:44.947 [http-nio-5000-exec-7] "GET /recruit/admin/group/2 HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/admin/group/2] from: 127.0.0.1 costs: 9ms
+2024-04-25 23:59:58.445 [http-nio-5000-exec-5] "GET /recruit/admin/group/all HTTP/1.1" INFO  c.recruit.common.interceptor.RequestLogInterceptor - [GET] -> [/recruit/admin/group/all] from: 127.0.0.1 costs: 3ms
